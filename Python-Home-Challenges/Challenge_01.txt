@@ -1,0 +1,7 @@
+Create a python progarm that do the following:
+1. Reads a text file
+2. Returns the most recurring word in that file. 
+
+You’ll have to find our yourself how to open and read lines from a file.
+
+Good Luck!
