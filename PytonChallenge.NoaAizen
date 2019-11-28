@@ -1,0 +1,13 @@
+file = open("pizza.txt", "r")
+data = file.read().split()
+print(data)
+dict={}
+for i in data:
+        if i in dict:
+                dict[i] += 1
+        else:
+                dict[i] = 1
+
+max_word=dict[max(dict, key=dict.get)]
+word=max(dict, key=dict.get)
+print(word+' appears '+str(max_word)+' times')
