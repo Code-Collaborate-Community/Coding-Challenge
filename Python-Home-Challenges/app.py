@@ -1,10 +1,11 @@
-f = open("Challenge_01.txt", "r")
-data = f.read().split()
-dict = {}
-for word in data:
-    if word in dict:
-        dict[word] += 1
-    else:
-        dict[word] = 1
-print(
-    f'Most recurring word in that file: {max(dict, key=dict.get)}, And it appears {dict[max(dict, key=dict.get)]} times')
+with open("./Python-Home-Challenges/Challenge_01.txt") as file:
+    fileArr = file.read().split()
+    words = {}
+    for word in fileArr:
+        if word in words:
+            words[word] += 1
+        else:
+            words[word] = 1
+    print(
+        f'''Most recurring word in that file: {max(words, key=words.get)}
+And it appears {words[max(words, key=words.get)]} times''')
