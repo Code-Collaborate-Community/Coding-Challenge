@@ -5,7 +5,7 @@ with open(r'/home/$USER/', 'r') as fp:
 # Read file #
 split_words_from_file = f.split()
 
-# Creating variable for keeping the recurring value from the file #
+# Creating variable for checking what is the recurring value  #
 biggest_counting = 0
 
 for list_arg in split_words_from_file:
