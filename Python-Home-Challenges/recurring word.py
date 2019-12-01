@@ -1,10 +1,6 @@
 
 where_file = input('Enter the file route: ')
 my_file = open(where_file,"r")
-print("Your file text is:")
-for x in my_file:
-  print(x)
-print("---------------")
 words_in_text = dict()
 my_file = open(where_file,"r")
 for line in my_file:
@@ -18,5 +14,10 @@ for line in my_file:
 for key in list(words_in_text.keys()):
     print(key, ":", words_in_text[key])
 print("---------------")
-print (max(words_in_text.values()))
-
+max1=0
+for highest in list(words_in_text.keys()):
+    if max1 < words_in_text[highest]:
+        max1 = words_in_text[highest]
+        key1 = highest
+print ("The most recurring word is: ", key1," with ",max1, " times")
+my_file.close()
