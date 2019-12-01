@@ -1,19 +1,15 @@
 
-with open('sample.txt', 'r') as file:
-    data = file.read().replace('\n', '')
-    print("The content of the file is:\n\n" + data)
+def most_frequent(List): 
+    dict = {} 
+    count, itm = 0, '' 
+    for item in reversed(List): 
+        dict[item] = dict.get(item, 0) + 1
+        if dict[item] >= count : 
+            count, itm = dict[item], item 
+    return(itm) 
 
+file = open('sample.txt','r')
+data = file.read().replace('\n', '')
+words = data.split()
 
-import re
-words = re.sub("[^\w]", " ",  data).split()
-
-for word in words:
-	from collections import Counter
-	word_counts = Counter(words)
-
-MOword = word_counts.most_common(1)[0][0]
-MOtimes = word_counts.most_common(1)[0][1]
-
-print("\nThe most occuring word is {} and it occurs {} times".format(MOword,MOtimes))
-
-
+print(f"The most occuring word is: {most_frequent(words)}")
