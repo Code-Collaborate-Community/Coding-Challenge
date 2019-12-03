@@ -1,3 +1,4 @@
-cd /home/$USER/
-echo "please do not do what ever you want to do" > file.txt
+#!/bin/bash
 
+echo "Hi Hi Hello Hello Hi" > ~/PycharmProjects/file.txt
+echo "File created succesfully"
