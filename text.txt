@@ -1,0 +1,10 @@
+Hello world 
+my name is mor
+
+Hello world
+its my first program i write in python
+
+i do now homework at python
+i use at python version python 3.6
+
+python
