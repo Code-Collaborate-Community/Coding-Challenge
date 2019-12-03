@@ -1,0 +1,4 @@
+1. Open the "Creating_file.sh" file
+2. execute the "Python-home-challenge#01-MaorWeiss.py" file
+
+Have a nice day!
